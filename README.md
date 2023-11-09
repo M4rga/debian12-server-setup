@@ -50,4 +50,13 @@ Now on you remote host type:
 http://(yourIPv4):8000/preseed.cfg
 ```
 
-Wait till the computer shuts down
+When its done the computer server will shut down, if needed, turn on the device again and change the main user's password immediately (you can use the passwd command).
+
+At this point you can access the server remotely using: 
+
+```cmd
+ssh -p(port) (user)@(ip)
+e.g. ssh -2222 mainuser@localhost
+```
+
+This will ask you a user and then a password
