@@ -6,7 +6,7 @@ To do this we will use a `preseed.cfg` file to skip all the annoying setup.
 
 ## Getting started
 
-This directory contains a [`preseed.cfg`](preseed.cfg) file, download it and put in a folder all alone, please make sure to edit it as you wish, for example you can remove the `sed -Ei ...` line located at the bottom, because probably you don't need to change the OpenSSH server port.
+This directory contains a [`preseed.cfg`](preseed.cfg) file, download it and put in a folder, please make sure to edit it as you wish, for example you can remove the `sed -Ei ...` line located at the bottom, because probably you don't need to change the OpenSSH server port.
 
 In particular:
 
@@ -52,7 +52,7 @@ http://(yourIPv4):8000/preseed.cfg
 
 When its done the computer server will shut down, if needed, turn on the device again and change the main user's password immediately (you can use the passwd command).
 
-At this point you can access the server remotely using: 
+At this point you can press **CTRL+C** on the **Git Bash**, now you can access the server remotely using: 
 
 ```cmd
 ssh -p(port) (user)@(ip)
