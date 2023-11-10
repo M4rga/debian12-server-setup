@@ -10,6 +10,7 @@ This directory contains a [`preseed.cfg`](preseed.cfg) file, download it and put
 
 In particular:
 
+- `echo "(YOUR PUBLIC SSH KEY)" >> ~mainuser/.ssh/authorized_keys`
 - `d-i debian-installer/language string ...`
 - `d-i debian-installer/country string ...`
 - `d-i keyboard-configuration/xkb-keymap select ...`
@@ -58,5 +59,3 @@ At this point you can press **CTRL+C** on the **Git Bash**, now you can access t
 ssh -p(port) (user)@(ip)
 e.g. ssh -2222 mainuser@localhost
 ```
-
-This will ask you a user and then a password
