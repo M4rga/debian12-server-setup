@@ -53,12 +53,14 @@ http://(yourIPv4):8000/preseed.cfg
 
 When its done the computer server will shut down, if needed, turn on the device again and change the main user's password immediately (you can use the passwd command).
 
-At this point you can press **CTRL+C** on the **Git Bash**, now you can access the server remotely using: 
+At this point you can press **CTRL+C** on the **Git Bash** to close the http server.
+
+You can access the server remotely using: 
 
 ```cmd
 ssh -p(port) (user)@(ip)
 ```
-e.g. ssh -2222 mainuser@localhost
+e.g. ssh -p2222 mainuser@localhost
 
 ## Provisioning
 
@@ -71,4 +73,4 @@ To run the script you need to open this folder in **Git bash** with `right-click
 ```bash
 ssh -p(port) (user)@(ip) 'bash -s' < provisioning.sh
 ```
-e.g. ssh -2222 mainuser@localhost 'bash -s' < provisioning.sh
+e.g. ssh -p2222 mainuser@localhost 'bash -s' < provisioning.sh
