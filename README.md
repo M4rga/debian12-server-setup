@@ -6,7 +6,7 @@ To do this we will use a `preseed.cfg` file to skip all the annoying setup.
 
 ## Getting started
 
-This directory contains a [`preseed.cfg`](preseed.cfg) file, download it and put in a folder, please make sure to edit it as you wish, for example you can remove the `sed -Ei ...` line located at the bottom, because probably you don't need to change the OpenSSH server port.
+This directory contains a [`preseed.cfg`](preseed.cfg) file, download it and put in a folder, please make sure to edit it as you wish, for example if you change the **username** make sure to edit it in the last lines of the file.
 
 In particular:
 
@@ -57,5 +57,18 @@ At this point you can press **CTRL+C** on the **Git Bash**, now you can access t
 
 ```cmd
 ssh -p(port) (user)@(ip)
-e.g. ssh -2222 mainuser@localhost
 ```
+e.g. ssh -2222 mainuser@localhost
+
+## Provisioning
+
+This directory contains a [`provisioning`](provisioning/main.sh) file witch contains a lot of different codes that i suggest you to run when setting up a new server, for example install basic things like tree, curl, shellcheck, python...
+
+> **Note**: if you don't undestand anything about the file you can simply ask [ChatGPT](https://chat.openai.com/).
+
+To run the script you need to open this folder in **Git bash** with `right-click` &rarr; `Open Git Bash here` and type this:
+
+```bash
+ssh -p(port) (user)@(ip) 'bash -s' < provisioning.sh
+```
+e.g. ssh -2222 mainuser@localhost 'bash -s' < provisioning.sh
