@@ -77,3 +77,5 @@ ssh -p(port) (user)@(ip) 'bash -s' < provisioning.sh
 ```
 
 e.g. `ssh -p2222 mainuser@localhost 'bash -s' < provisioning.sh`
+
+Inspired by https://github.com/dmotte/misc
