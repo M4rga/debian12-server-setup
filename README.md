@@ -54,25 +54,15 @@ http://(yourIPv4):8000/preseed.cfg
 
 When it's done, the computer server will shut down. If needed, turn on the device again and change the main user's password immediately (you can use the `passwd` command).
 
-<<<<<<< HEAD
 At this point, you can press **CTRL+C** on the **Git Bash** to close the HTTP server.
 
 You can access the server remotely using:
-=======
-At this point you can press **CTRL+C** on the **Git Bash** to close the http server.
-
-You can access the server remotely using: 
->>>>>>> 488d7529294e87814c8d6d37a37819a24d7919d8
 
 ```cmd
 ssh -p(port) (user)@(ip)
 ```
-<<<<<<< HEAD
 
 e.g. `ssh -p2222 mainuser@localhost`
-=======
-e.g. ssh -p2222 mainuser@localhost
->>>>>>> 488d7529294e87814c8d6d37a37819a24d7919d8
 
 ## Provisioning
 
@@ -85,9 +75,5 @@ To run the script, you need to open this folder in **Git Bash** with `right-clic
 ```bash
 ssh -p(port) (user)@(ip) 'bash -s' < provisioning.sh
 ```
-<<<<<<< HEAD
 
 e.g. `ssh -p2222 mainuser@localhost 'bash -s' < provisioning.sh`
-=======
-e.g. ssh -p2222 mainuser@localhost 'bash -s' < provisioning.sh
->>>>>>> 488d7529294e87814c8d6d37a37819a24d7919d8
