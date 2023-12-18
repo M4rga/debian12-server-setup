@@ -78,4 +78,7 @@ ssh -p(port) (user)@(ip) 'bash -s' < provisioning.sh
 
 e.g. `ssh -p2222 mainuser@localhost 'bash -s' < provisioning.sh`
 
-Inspired by https://github.com/dmotte/misc
+Inspired by:
+
+- https://github.com/dmotte/misc/tree/main/examples/debian-preseed
+- https://github.com/dmotte/misc/blob/main/scripts/provision.sh 
